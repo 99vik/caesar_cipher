@@ -16,14 +16,3 @@ class CaesarCipher
     result
   end
 end
-
-cc = CaesarCipher.new
-loop do
-  print "Enter message: "
-  message = gets.strip
-  print "Enter shift number: "
-  shift = gets.strip.to_i 
-  print "Ciphered message: "
-  puts cc.translate(message, shift)
-  puts
-end
